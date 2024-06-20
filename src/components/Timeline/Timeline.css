@@ -1,0 +1,40 @@
+/* Timeline.css */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 0;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background-color: #ddd;
+  top: 125px; /* Adjusted to leave space for the title */
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+}
+
+.timeline-title {
+  font-size: 24px;
+  font-weight: bold;
+  position: absolute;
+  top: -40px; /* Position at the top of the timeline */
+  left: 50%;
+  transform: translateX(-50%);
+  background: white; /* Optional: Background color to make it stand out */
+}
+
+.timeline-subtitle {
+  font-size: 18px;
+  color: #888;
+  margin-top: 40px; /* Space below the title */
+}
+
+.timeLineItems {
+  margin-top: 100px;
+}

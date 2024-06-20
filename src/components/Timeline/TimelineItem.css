@@ -1,0 +1,140 @@
+/* TimelineItem.css */
+.timeline-item {
+  padding: 20px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+  box-sizing: border-box;
+  opacity: 0; /* Initially hidden */
+  transform: translateX(100px); /* Initially offset */
+  transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+.timeline-item.left {
+  left: 0;
+  transform: translateX(-100px); /* Initially offset */
+}
+
+.timeline-item.right {
+  left: 50%;
+  transform: translateX(100px); /* Initially offset */
+}
+
+.timeline-item.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.timeline-content {
+  padding: 20px;
+  border-left: 5px solid;
+  border-radius: 6px;
+  background-color: #fff;
+  position: relative;
+}
+
+.timeline-item.left .timeline-content {
+  border-left: 5px solid;
+  border-color: inherit;
+}
+
+.timeline-item.right .timeline-content {
+  border-left: none;
+  border-right: 5px solid;
+  border-color: inherit;
+}
+
+.timeline-item.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: -15px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #fff;
+}
+
+.timeline-item.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: -15px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #fff transparent transparent;
+}
+
+.timeline-phase {
+  font-size: 16px;
+  color: #555;
+}
+
+.timeline-title {
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.timeline-description {
+  font-size: 14px;
+  color: #777;
+}
+
+.timeline-circle {
+  position: absolute;
+  top: 50%;
+  left: -50px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: inherit;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline-item.right .timeline-circle {
+  left: auto;
+  right: -50px;
+}
+
+/* Define the coin flip keyframes */
+@keyframes coinFlip {
+  0% {
+    transform: perspective(1000px) rotateY(0);
+  }
+  25% {
+    transform: perspective(1000px) rotateY(90deg);
+  }
+  50% {
+    transform: perspective(1000px) rotateY(180deg);
+  }
+  75% {
+    transform: perspective(1000px) rotateY(270deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateY(360deg);
+  }
+}
+
+/* Apply the animation to the logo */
+.startLogo {
+  width: 200px;
+  height: 200px;
+  transition: transform 0.6s ease-in-out;
+  display: inline-block;
+}
+
+/* Trigger the animation on hover */
+.startLogo:hover {
+  animation: coinFlip 1s forwards;
+}
+

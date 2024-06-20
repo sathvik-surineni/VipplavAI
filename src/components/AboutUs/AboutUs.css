@@ -1,0 +1,66 @@
+/* Custom height */
+.custom-height {
+  max-height: 650px; /* Adjust the height as per your requirement */
+  object-fit: cover;
+}
+
+/* About us heading */
+.about-us-heading {
+  text-align: center;
+}
+
+/* Introduction, Key Values, Recent Updates Sections */
+.introduction, .key-values, .recent-updates {
+  padding-left: 6rem;
+  padding-right: 6rem;
+  background-color: white;
+  font-size: larger;
+  font-weight: 350;
+  opacity: 0; /* Initial state for fade-in effect */
+  animation: fadeIn 2s forwards; /* Applying fade-in animation */
+}
+
+/* Key values list */
+.key-values ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.key-values li {
+  margin-bottom: 10px;
+}
+
+/* Recent updates */
+.recent-updates .news-item {
+  margin-bottom: 20px;
+}
+
+.recent-updates .news-item h4 {
+  margin: 0 0 10px 0;
+}
+
+.recent-updates .news-item p {
+  margin: 0;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Additional classes for applying animations to specific sections */
+.fade-in {
+  animation: fadeIn 2s forwards;
+}
+
+/* Ensure all elements with these classes fade in */
+.introduction,
+.key-values,
+.recent-updates {
+  animation: fadeIn 10s forwards;
+}

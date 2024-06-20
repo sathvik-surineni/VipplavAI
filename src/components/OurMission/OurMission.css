@@ -1,0 +1,103 @@
+/* src/components/OurMission/OurMission.css */
+.our-mission {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  background: #f8f8f8;
+}
+
+.image-grid {
+  display: flex;
+  gap: 1rem;
+}
+
+.image-large {
+  margin-top: 10rem;
+  width: 500px;
+  height: 700px;
+  object-fit: cover;
+  animation: slideInFromLeft 1s ease-in-out;
+  border-radius: 15px;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.small-images {
+  justify-content: center;
+  border-radius: 15px; /* Center the small images within the container */
+}
+
+.image-small-first {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  animation: slideInFromTop 1s ease-in-out;
+  border-radius: 15px;
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.image-small-second {
+  width: 300px;
+  height: 400px;
+  margin-top: 15rem;
+  object-fit: cover;
+  animation: slideInFromBottom 1s ease-in-out;
+  border-radius: 15px;
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.mission-content {
+  margin-left: 2rem;
+}
+
+.mission-content h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.mission-content p {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 1rem;
+}
+
+.highlight-box {
+  background-color: #d4edda;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-left: 4px solid #28a745;
+}
+
+.highlight-box p {
+  font-size: 1rem;
+  color: #155724;
+}
