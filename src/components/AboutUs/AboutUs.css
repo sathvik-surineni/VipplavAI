@@ -16,8 +16,6 @@
   background-color: white;
   font-size: larger;
   font-weight: 350;
-  opacity: 0; /* Initial state for fade-in effect */
-  animation: fadeIn 2s forwards; /* Applying fade-in animation */
 }
 
 /* Key values list */
@@ -43,24 +41,45 @@
   margin: 0;
 }
 
-/* Fade-in animation */
-@keyframes fadeIn {
+/* Line-by-line animation */
+@keyframes lineByLine {
   0% {
     opacity: 0;
+    transform: translateY(20px);
   }
   100% {
     opacity: 1;
+    transform: translateY(0);
   }
 }
 
-/* Additional classes for applying animations to specific sections */
-.fade-in {
-  animation: fadeIn 2s forwards;
+.line-animated {
+  display: block;
+  opacity: 0;
 }
 
-/* Ensure all elements with these classes fade in */
-.introduction,
-.key-values,
-.recent-updates {
-  animation: fadeIn 10s forwards;
+.line-animated:nth-child(1) {
+  animation: lineByLine 0.5s forwards;
+  animation-delay: 0.5s;
+}
+
+.line-animated:nth-child(2) {
+  animation: lineByLine 0.5s forwards;
+  animation-delay: 1s;
+}
+
+.line-animated:nth-child(3) {
+  animation: lineByLine 0.5s forwards;
+  animation-delay: 1.5s;
+}
+
+/* Add more nth-child rules as needed */
+/* Remove padding on small devices */
+@media (max-width: 768px) {
+  .introduction,
+  .key-values,
+  .recent-updates {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }

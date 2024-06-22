@@ -1,9 +1,7 @@
-/* TimelineItem.css */
 .timeline-item {
   padding: 20px 40px;
   position: relative;
   background-color: inherit;
-  width: 50%;
   box-sizing: border-box;
   opacity: 0; /* Initially hidden */
   transform: translateX(100px); /* Initially offset */
@@ -11,12 +9,10 @@
 }
 
 .timeline-item.left {
-  left: 0;
   transform: translateX(-100px); /* Initially offset */
 }
 
 .timeline-item.right {
-  left: 50%;
   transform: translateX(100px); /* Initially offset */
 }
 
@@ -137,4 +133,66 @@
 .startLogo:hover {
   animation: coinFlip 1s forwards;
 }
+@media (max-width: 768px) {
+  .timeline-item {
+    width: 100%;
+    left: 0 !important;
+    transform: translateX(0) !important;
+    text-align: left;
+    padding: 20px 20px;
+    box-sizing: border-box;
+  }
 
+  .timeline-item.right {
+    left: 0;
+  }
+
+  .timeline-circle {
+    left:-20px !important; /* Specifies the position for mobile view */
+  }
+
+  .timeline-item.right 
+  .timeline-circle {
+    left:-2rem !important;
+    right: auto;
+  }
+
+  .timeline-content {
+    margin-left: 40px !important;
+    border-left: 5px solid;
+  }
+
+  .timeline-item.right .timeline-content {
+    border-left: 5px solid;
+    border-right: none;
+  }
+
+  .startLogo {
+    width: 10rem;
+    height: 10rem;
+    margin-bottom: 5rem;
+    padding-bottom: 20px;
+  }
+
+  .timeline-phase {
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+  }
+
+  .timeline-title {
+    font-size: 18px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    text-align: center;
+    white-space: nowrap; /* Prevents the text from wrapping */
+    overflow: hidden; /* Hides overflow text */
+    text-overflow: ellipsis; /* Adds ellipsis (...) for overflow text */
+  }
+
+  .timeline-phase {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+  }
+}

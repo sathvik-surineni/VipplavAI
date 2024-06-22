@@ -35,7 +35,7 @@ const appRouter = createBrowserRouter([
       },
       {
         path: '/tools',
-        element: <Tools />,
+        element:<Tools />,
       },
       {
         path: '/blogs',

@@ -1,40 +1,49 @@
-import React, { useState } from "react";
-import emailjs from "emailjs-com";
-import "@fortawesome/fontawesome-free/css/all.min.css";
-import "./ContactUs.css";
+import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import './ContactUs.css';
 
 const ContactUs = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    message: "",
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        phone: '',
+        message: ''
     });
-  };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    emailjs
-      .send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", formData, "YOUR_USER_ID")
-      .then(
-        (response) => {
-          console.log("SUCCESS!", response.status, response.text);
-          alert("Message sent successfully!");
-        },
-        (err) => {
-          console.log("FAILED...", err);
-          alert("Failed to send message, please try again later.");
-        }
-      );
-  };
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({
+            ...formData,
+            [name]: value
+        });
+    };
 
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        emailjs
+            .send(
+                'service_2fgev2i', // Replace with your Service ID
+                'template_sghkt9i', // Replace with your Template ID
+                {
+                    name: formData.name,
+                    email: formData.email,
+                    phone: formData.phone,
+                    message: formData.message,
+                },
+                '-DPRaOePYvT9h6ZcF' // Replace with your Public Key
+            )
+            .then(
+                (response) => {
+                    console.log('SUCCESS!', response.status, response.text);
+                    alert('Message sent successfully!');
+                },
+                (err) => {
+                    console.log('FAILED...', err);
+                    alert('Failed to send message, please try again later.');
+                }
+            );
+    };
   return (
     <div className="contact-container flex justify-center items-center min-h-screen bg-gray-2000">
       <div className="form-container text-white p-10 rounded-lg shadow-lg w-full max-w-4xl flex">

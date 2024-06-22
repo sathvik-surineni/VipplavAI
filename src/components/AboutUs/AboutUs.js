@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from 'react';
 import Carousel from "react-bootstrap/Carousel";
 import { Card, Container, Row, Col } from 'react-bootstrap';
 import imgFounder from "../../Assets/vineel.jpeg";
@@ -27,7 +27,23 @@ const teamMembers = [
     },
   ];
 
+const applyLineByLineAnimation = (selector) => {
+  const elements = document.querySelectorAll(selector);
+
+  elements.forEach(element => {
+    const text = element.innerHTML;
+    const lines = text.split('<br>');
+    element.innerHTML = lines
+      .map((line, index) => `<span class="line-animated">${line}</span>`)
+      .join('<br>');
+  });
+};
+
 const AboutUs = () => {
+  useEffect(() => {
+    applyLineByLineAnimation('.introduction p');
+  }, []);
+
   return (
     <div>
       <div className="carousel">

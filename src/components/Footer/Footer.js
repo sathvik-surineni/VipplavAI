@@ -34,7 +34,6 @@ const Footer = () => {
               <li><Link to="#">Terms & Conditions</Link></li>
             </ul>
           </div>
-          <div></div>
         </div>
         <div className="border-top flex">
           <p>&copy; 2024 Vipplav AI.</p>
