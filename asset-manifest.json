@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/VipplavAI/static/css/main.9e441235.css",
+    "main.js": "/VipplavAI/static/js/main.e040e2d1.js",
+    "static/media/mission2.png": "/VipplavAI/static/media/mission2.4ccfa0075adaafa9ee36.png",
+    "static/media/mission1.png": "/VipplavAI/static/media/mission1.4250bfbcb0847a47f5c1.png",
+    "static/media/pranay.png": "/VipplavAI/static/media/pranay.5b88c8e27239af3828ed.png",
+    "static/media/TeluguOCR.webp": "/VipplavAI/static/media/TeluguOCR.25a55b41ea823ac961f0.webp",
+    "static/media/blog3.webp": "/VipplavAI/static/media/blog3.010fa4fd36abd7b94a41.webp",
+    "static/media/blog4.webp": "/VipplavAI/static/media/blog4.745e7a6a3bff7bfd4608.webp",
+    "static/media/blog2.webp": "/VipplavAI/static/media/blog2.78d42f1158ab2b932b9e.webp",
+    "static/media/TeluguTool.webp": "/VipplavAI/static/media/TeluguTool.7074deb43127743b4a7d.webp",
+    "static/media/img1 (1).webp": "/VipplavAI/static/media/img1 (1).90e3285b86c6f6a580f9.webp",
+    "static/media/webscrap.webp": "/VipplavAI/static/media/webscrap.4fbd4d0c3420f6b8131c.webp",
+    "static/media/img1 (2).webp": "/VipplavAI/static/media/img1 (2).4fe90f52690c811207c4.webp",
+    "static/media/blog1.webp": "/VipplavAI/static/media/blog1.1c94c35c1c68848cf689.webp",
+    "static/media/img1 (6).webp": "/VipplavAI/static/media/img1 (6).717072fc20c746b168d2.webp",
+    "static/media/contatus.webp": "/VipplavAI/static/media/contatus.4bce12c2413bfd2657b3.webp",
+    "static/media/LLM.webp": "/VipplavAI/static/media/LLM.f591385581c7fc82cf05.webp",
+    "static/media/img1 (4).webp": "/VipplavAI/static/media/img1 (4).5dcf827cbf50ed43949d.webp",
+    "static/media/img1 (9).webp": "/VipplavAI/static/media/img1 (9).98d021ca3c5d34b4bfbf.webp",
+    "static/media/fa-solid-900.ttf": "/VipplavAI/static/media/fa-solid-900.bacd5de623fb563b961a.ttf",
+    "static/media/2.png": "/VipplavAI/static/media/2.b0b32f2624328254e958.png",
+    "static/media/fa-brands-400.ttf": "/VipplavAI/static/media/fa-brands-400.60127e352b7a11f7f1bc.ttf",
+    "static/media/fa-solid-900.woff2": "/VipplavAI/static/media/fa-solid-900.4d986b00ff9ca3828fbd.woff2",
+    "static/media/fa-brands-400.woff2": "/VipplavAI/static/media/fa-brands-400.455ea818179b4def0c43.woff2",
+    "static/media/fa-regular-400.ttf": "/VipplavAI/static/media/fa-regular-400.eb91f7b948a42799f678.ttf",
+    "static/media/vineel.jpeg": "/VipplavAI/static/media/vineel.6db93f07586378bf656e.jpeg",
+    "static/media/1718630723722.png": "/VipplavAI/static/media/1718630723722.5bb5af1c904b7af08bf4.png",
+    "static/media/fa-regular-400.woff2": "/VipplavAI/static/media/fa-regular-400.21cb8f55d8e0c5b89751.woff2",
+    "static/media/fa-v4compatibility.ttf": "/VipplavAI/static/media/fa-v4compatibility.c8e090db312b0bea2aa2.ttf",
+    "static/media/fa-v4compatibility.woff2": "/VipplavAI/static/media/fa-v4compatibility.cf7f5903d06b79ad60f1.woff2",
+    "index.html": "/VipplavAI/index.html",
+    "main.9e441235.css.map": "/VipplavAI/static/css/main.9e441235.css.map",
+    "main.e040e2d1.js.map": "/VipplavAI/static/js/main.e040e2d1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9e441235.css",
+    "static/js/main.e040e2d1.js"
+  ]
+}
