@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/VipplavAI/static/css/main.9e441235.css",
-    "main.js": "/VipplavAI/static/js/main.e040e2d1.js",
+    "main.js": "/VipplavAI/static/js/main.b7cf25fc.js",
     "static/media/mission2.png": "/VipplavAI/static/media/mission2.4ccfa0075adaafa9ee36.png",
     "static/media/mission1.png": "/VipplavAI/static/media/mission1.4250bfbcb0847a47f5c1.png",
     "static/media/pranay.png": "/VipplavAI/static/media/pranay.5b88c8e27239af3828ed.png",
@@ -32,10 +32,10 @@
     "static/media/fa-v4compatibility.woff2": "/VipplavAI/static/media/fa-v4compatibility.cf7f5903d06b79ad60f1.woff2",
     "index.html": "/VipplavAI/index.html",
     "main.9e441235.css.map": "/VipplavAI/static/css/main.9e441235.css.map",
-    "main.e040e2d1.js.map": "/VipplavAI/static/js/main.e040e2d1.js.map"
+    "main.b7cf25fc.js.map": "/VipplavAI/static/js/main.b7cf25fc.js.map"
   },
   "entrypoints": [
     "static/css/main.9e441235.css",
-    "static/js/main.e040e2d1.js"
+    "static/js/main.b7cf25fc.js"
   ]
 }
