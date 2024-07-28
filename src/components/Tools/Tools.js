@@ -4,7 +4,7 @@ import styles from "./Tools.module.css";
 import toolsData from "./toolsData";
 
 const Tools = () => {
-  const [selectedTool, setSelectedTool] = useState(null); // Add this line
+  const [selectedTool, setSelectedTool] = useState(null);
   const heroTool = toolsData.find((tool) => tool.isHero);
   const otherTools = toolsData.filter((tool) => !tool.isHero);
 
@@ -42,15 +42,17 @@ const HeroTool = ({ tool, onButtonClick }) => {
         <Card.Subtitle className="mb-2 text-muted">
           {tool.features}
         </Card.Subtitle>
-        <Card.Text className={`${styles.toolDescription} ${showMore ? styles.showMore : ""}`}>
+        <Card.Text className={`${styles.toolDescription} ${showMore ? styles.showMore : ""} ${styles.paddingRight}`}>
           {tool.description}
         </Card.Text>
-        <button className={styles.customButton} onClick={toggleShowMore}>
-          {showMore ? "Show less" : "Show more"}
-        </button>
-        <button className={styles.customButton} onClick={() => onButtonClick(tool.link)}>
-          Click here to Use
-        </button>
+        <div className="d-flex justify-content-between">
+          <button className={styles.customButton} onClick={toggleShowMore}>
+            {showMore ? "Show less" : "Show more"}
+          </button>
+          <button className={styles.customButton} onClick={() => onButtonClick(tool.link)}>
+            Click here to Use
+          </button>
+        </div>
       </Card.Body>
     </Card>
   );
@@ -69,15 +71,17 @@ const ToolCard = ({ tool, onButtonClick }) => {
         <Card.Subtitle className="mb-2 text-muted">
           {tool.features}
         </Card.Subtitle>
-        <Card.Text className={`${styles.toolDescription} ${showMore ? styles.showMore : ""}`}>
+        <Card.Text className={`${styles.toolDescription} ${showMore ? styles.showMore : ""} ${styles.paddingRight}`}>
           {tool.description}
         </Card.Text>
-        <button className={styles.customButton} onClick={toggleShowMore}>
-          {showMore ? "Show less" : "Show more"}
-        </button>
-        <button className={styles.customButton} onClick={() => onButtonClick(tool.link)}>
-          Click here to Use
-        </button>
+        <div className="d-flex justify-content-between">
+          <button className={styles.customButton} onClick={toggleShowMore}>
+            {showMore ? "Show less" : "Show more"}
+          </button>
+          <button className={styles.customButton} onClick={() => onButtonClick(tool.link)}>
+            Click here to Use
+          </button>
+        </div>
       </Card.Body>
     </Card>
   );

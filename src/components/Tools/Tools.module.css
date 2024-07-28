@@ -48,6 +48,12 @@
   outline: none;
   box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
 }
+.paddingRight {
+  padding-right: 20px; /* Adjust the value as needed */
+}
+.buttonSpacing {
+  margin-right:5rem; /* Adjust the value as needed */
+}
 
 /* Animations */
 @keyframes fadeIn {
