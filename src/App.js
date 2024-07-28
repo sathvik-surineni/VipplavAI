@@ -59,7 +59,7 @@ import { createHashRouter, Outlet, RouterProvider } from 'react-router-dom';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AboutUs from './components/AboutUs/AboutUs';
-import OurMission from './components/OurMission/OurMission';
+import Home from './components/Home/Home';
 import ContactUs from './components/ContactUs/ContactUs';
 import BlogPage from './components/Blogs/BlogPage';
 import Tools from './components/Tools/Tools';
@@ -83,12 +83,13 @@ const appRouter = createHashRouter([
     children: [
       {
         path: '/',
-        element: <AboutUs />,
+        element:<Home />,
       },
       {
-        path: '/our-mission',
-        element: <OurMission />,
+        path: '/aboutus',
+        element: <AboutUs />,
       },
+     
       {
         path: '/tools',
         element: <Tools />,

@@ -17,10 +17,10 @@ const NavBar = () => {
           <Nav className="me-auto">
           </Nav>
           <Nav>
-            <Nav.Link as={NavLink} to="/">About Us</Nav.Link>
-            <Nav.Link as={NavLink} to="/our-mission">Our Mission</Nav.Link>
+            <Nav.Link as={NavLink} to="/">Home</Nav.Link>      
             <Nav.Link as={NavLink} to="/tools">Tools</Nav.Link>
             <Nav.Link as={NavLink} to="/blogs">Blogs</Nav.Link>
+            <Nav.Link as={NavLink} to="/aboutus">About Us</Nav.Link>
             <Nav.Link as={NavLink} to="/contact">Contact Us</Nav.Link>
           </Nav>
         </Navbar.Collapse>

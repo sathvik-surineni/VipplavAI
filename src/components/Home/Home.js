@@ -1,14 +1,51 @@
 import React from "react";
-import mission1 from "../../Assets/img1 (4).webp"; // Add your images to the src/images directory
-import mission2 from "../../Assets/mission1.png"; // Add your images to the src/images directory
-import mission3 from "../../Assets/mission2.png"; // Add your images to the src/images directory
-import "./OurMission.css";
+import "./Home.css";
 import Timeline from "../Timeline/Timeline";
-
-const OurMission = () => {
+import Carousel from "react-bootstrap/Carousel";
+import img1 from "../../Assets/img1 (1).webp";
+import img2 from "../../Assets/img1 (2).webp";
+import img3 from "../../Assets/img1 (6).webp";
+import img4 from "../../Assets/img1 (9).webp";
+const Home = () => {
   return (
     <div>
-      <section className="our-mission">
+      <div className="carousel">
+        <Carousel data-bs-theme="dark">
+          <Carousel.Item>
+            <img
+              className="d-block w-100 custom-height"
+              src={img1}
+              alt="First slide"
+            />
+            <Carousel.Caption />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100 custom-height"
+              src={img2}
+              alt="Second slide"
+            />
+            <Carousel.Caption />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100 custom-height"
+              src={img3}
+              alt="Third slide"
+            />
+            <Carousel.Caption />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100 custom-height"
+              src={img4}
+              alt="Fourth slide"
+            />
+            <Carousel.Caption />
+          </Carousel.Item>
+        </Carousel>
+      </div>
+      {/* <section className="our-mission">
         <div className="image-grid">
           <img
             src={mission1}
@@ -28,7 +65,11 @@ const OurMission = () => {
             />
           </div>
         </div>
-        <div className="mission-content">
+
+      </section> */}
+
+      {/* Importing of Timeline */}
+      <div className="mission-content">
           <h2 className="text-center">Our Mission</h2>
           <p>
             Welcome to Vipplav AI, where our mission transcends the ordinary and
@@ -58,12 +99,9 @@ const OurMission = () => {
             </p>
           </div>
         </div>
-      </section>
-
-      {/* Importing of Timeline */}
       <Timeline />
     </div>
   );
 };
 
-export default OurMission;
+export default Home;

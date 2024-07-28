@@ -1,12 +1,7 @@
 import React, { useEffect } from 'react';
-import Carousel from "react-bootstrap/Carousel";
 import { Card, Container, Row, Col } from 'react-bootstrap';
 import imgFounder from "../../Assets/vineel.jpeg";
 import imgFounder2 from "../../Assets/pranay.png";
-import img1 from "../../Assets/img1 (1).webp";
-import img2 from "../../Assets/img1 (2).webp";
-import img3 from "../../Assets/img1 (6).webp";
-import img4 from "../../Assets/img1 (9).webp";
 import "./AboutUs.css";
 
 const teamMembers = [
@@ -46,42 +41,6 @@ const AboutUs = () => {
 
   return (
     <div>
-      <div className="carousel">
-        <Carousel data-bs-theme="dark">
-          <Carousel.Item>
-            <img
-              className="d-block w-100 custom-height"
-              src={img1}
-              alt="First slide"
-            />
-            <Carousel.Caption />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100 custom-height"
-              src={img2}
-              alt="Second slide"
-            />
-            <Carousel.Caption />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100 custom-height"
-              src={img3}
-              alt="Third slide"
-            />
-            <Carousel.Caption />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100 custom-height"
-              src={img4}
-              alt="Fourth slide"
-            />
-            <Carousel.Caption />
-          </Carousel.Item>
-        </Carousel>
-      </div>
       <h1 className="about-us-heading p-4">About Us</h1>
       <section className="introduction">
         <p>

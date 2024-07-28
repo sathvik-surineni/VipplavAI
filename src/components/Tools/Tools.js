@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { Card, Container, Row, Col } from "react-bootstrap";
 import styles from "./Tools.module.css";
-import TeluguOCR from "../TeluguOCR/TeluguOCR";
 import toolsData from "./toolsData";
+
 const Tools = () => {
-  const [selectedTool, setSelectedTool] = useState(null);
+  const [selectedTool, setSelectedTool] = useState(null); // Add this line
   const heroTool = toolsData.find((tool) => tool.isHero);
   const otherTools = toolsData.filter((tool) => !tool.isHero);
 
@@ -13,10 +13,6 @@ const Tools = () => {
       setSelectedTool("telugu_ocr");
     }
   };
-
-  if (selectedTool === "telugu_ocr") {
-    return <TeluguOCR />;
-  }
 
   return (
     <Container className="my-5">
